@@ -1,0 +1,12 @@
+<p><b>Omise Angular</b></p>
+<p>Getting Started</p>
+<ol>
+    <li>Add <code><b>&lt;script src="https://cdn.omise.co/omise.js"&gt;&lt;/script&gt;</b></code> to src/index.html</li>
+    <li>Declare OmiseCard const as any under component import using <code><b>declare const OmiseCard: any;</b></code></li>
+    <li>Configure your omise public key in component file <code><b>ngOnInit()</b></code> using <code><b>OmiseCard.configure</b></code></li>
+    <li>Configure your submit button element id, amount, currency, and others properties in component file using <code><b>OmiseCard.configureButton</b></code>.</li>
+    <li>Add <code><b>OmiseCard.attach();</b></code> to apply configuration</li>
+    <li>Please refer to <a href="https://www.omise.co/omise-js">https://www.omise.co/omise-js</a> for more information</li>
+</ol>
+
+<router-outlet></router-outlet>
