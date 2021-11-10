@@ -8,6 +8,7 @@ import { ActivatedRoute } from '@angular/router';
 })
 export class TokenComponent implements OnInit {
   token: string = '';
+  source: string = '';
 
   constructor(
     private _route: ActivatedRoute
@@ -15,6 +16,7 @@ export class TokenComponent implements OnInit {
     this._route.queryParams.subscribe(params => {
       console.log(params);
       this.token = params['omiseToken'];
+      this.source = params['omiseSource'];
     });
    }
 
